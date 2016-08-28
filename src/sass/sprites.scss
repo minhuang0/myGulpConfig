@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+$gulp-spacing: 20px; //每个精灵图的间隔
+$gulp-sprite-dimensions: true;  //是否启动默认尺寸
+@import "compass/utilities/sprites";  // 加载compass sprites模块
+@import "gulp/*.png";                // 导入gulp目录下所有png图
+
+@include all-gulp-sprites; 
+
+//compass compile 编译
